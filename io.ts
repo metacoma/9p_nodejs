@@ -14,7 +14,7 @@ export class WebSocketReadWriter {
 
     constructor(url: string) {
         this.hub = new Hub<Uint8Array>();
-				this.socket = new WebSocket(url);
+        this.socket = new WebSocket(url, [ "binary" ]);
         this.socket.binaryType = "arraybuffer";
         this.socket.onmessage = (message) => {
             this.hub.item(new Uint8Array(message.data));
