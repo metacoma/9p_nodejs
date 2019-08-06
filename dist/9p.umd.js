@@ -800,7 +800,7 @@ var WebSocketReadWriter = /** @class */ (function () {
     function WebSocketReadWriter(url) {
         var _this = this;
         this.hub = new Hub();
-        this.socket = new WebSocket(url);
+        this.socket = new WebSocket(url, [ "binary" ]);
         this.socket.binaryType = "arraybuffer";
         this.socket.onmessage = function (message) {
             _this.hub.item(new Uint8Array(message.data));
