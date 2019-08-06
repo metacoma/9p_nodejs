@@ -1,0 +1,46 @@
+{
+  "_from": "9p",
+  "_id": "9p@0.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-alp/6mVJSjOjgiV0UIjJCg1EcfN2mTUG+S5Sl6cz5jaLrXKMECvCFm6VXotcpa0A44ULrrMaHGeKfr8RGsVmJg==",
+  "_location": "/9p",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "9p",
+    "name": "9p",
+    "escapedName": "9p",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/9p/-/9p-0.0.0.tgz",
+  "_shasum": "04d1c5b8ea3428bf32f8e619405b5ae272f289e4",
+  "_spec": "9p",
+  "_where": "/",
+  "author": {
+    "name": "Xuejie Xiao"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "9p protocol implementation for the browser environment",
+  "devDependencies": {
+    "@types/text-encoding": "^0.0.32",
+    "rollup": "^0.51.8",
+    "typescript": "^2.6.1"
+  },
+  "license": "MIT",
+  "main": "dist/9p.umd.js",
+  "module": "dist/9p.es.js",
+  "name": "9p",
+  "scripts": {
+    "build": "tsc && rollup -c rollup.config.ts"
+  },
+  "typings": "dist/types/library.d.ts",
+  "version": "0.0.0"
+}
