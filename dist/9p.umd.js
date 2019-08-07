@@ -812,6 +812,11 @@ var WebSocketReadWriter = /** @class */ (function () {
     WebSocketReadWriter.prototype.read = function () {
         return this.hub.next();
     };
+
+    WebSocketReadWriter.prototype.write = function (data) {
+				this.socket.send(data);
+    };
+
     return WebSocketReadWriter;
 }());
 
